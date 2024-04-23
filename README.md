@@ -18,3 +18,6 @@ Try it here: <a href="https://intrinsically-sublime.github.io/WLED-2D-gaps.json-
 
 Based on<a href="https://github.com/Intrinsically-Sublime/FastLED-XY-Map-Generator"> XY-Map-Generator</a> by Intrinsically-Sublime
 which is based on<a href="https://github.com/macetech/FastLED-XY-Map-Generator"> XY-Map-Generator</a> by Garrett Mace
+
+
+![Screenshot](https://github.com/Intrinsically-Sublime/WLED-2D-gaps.json-Generator/blob/main/2d-gaps-mapper_screenshot.png)
