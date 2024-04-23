@@ -10,7 +10,7 @@
 <ol>
   <li>Configure the array by setting the maximum x and y dimensions and click Rebuild.<br>
   <li>Click the LEDs to edit the shape of the array by enabling, disabling or hiding pixels.<br>
-  <li>Copy the resulting code into a "2d-gaps.json" file and upload it to your device via the webapp Settings/2D Configuration/upload<br>
+  <li>Download the resulting "2d-gaps.json" file and upload it to your device via the webapp Settings/2D Configuration/upload<br>
 </ol>
 
 Try it here: <a href="https://intrinsically-sublime.github.io/WLED-2D-gaps.json-Generator/">WLED-2D-gaps.json-Generator<br></a>

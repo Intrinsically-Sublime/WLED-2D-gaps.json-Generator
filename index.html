@@ -16,7 +16,7 @@
     <ol>
       <li>Configure the array by setting the maximum x and y dimensions and click Rebuild.<br>
       <li>Click the LEDs to edit the shape of the array by enabling, disabling or hiding pixels.<br>
-      <li>Copy the resulting code into a "2d-gaps.json" file and upload it to your device via the webapp Settings/2D Configuration/upload<br>
+      <li>Download the resulting "2d-gaps.json" file and upload it to your device via the webapp Settings/2D Configuration/upload<br>
     </ol>
     <hr>
     
@@ -60,7 +60,15 @@
             </div>
           </ul>
       </div>
-      
+        <div class="buttonBox">
+          <br>
+          <br>
+          <ul>
+            <div class="downloadBox">
+              <button id="downloadFile" onclick="download()">Download</button>
+            </div>
+          </ul>
+      </div>
     </div>
 
     <div class="ledGrid" id="ledgrid"></div>

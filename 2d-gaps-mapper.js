@@ -15,6 +15,15 @@ var pixelarray = [];
 var discardP = 1;
 var clearAll = 0;
 
+function download(){
+    var a = document.body.appendChild(
+        document.createElement("a")
+    );
+    a.download = "2d-gaps.json";
+    a.href = "data:text/html," + document.getElementById("result").innerHTML; // Grab the HTML
+    a.click(); // Trigger a click on the element
+}
+
 function triOutput(event) {
   triState = 1;
   gaps = 0;
