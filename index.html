@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WLED 2D-gaps.json Generator</title>
+    <link rel="stylesheet" type="text/css" href="2d-gaps-mapper.css">
+
+    <script src="2d-gaps-mapper.js"></script>
+
+  </head>
+  <body>
+    <h2>WLED 2D-gaps.json Generator</h2>
+    <hr>
+    
+    <h3>How to use</h3>
+    <ol>
+      <li>Configure the array by setting the maximum x and y dimensions and click Rebuild.<br>
+      <li>Click the LEDs to edit the shape of the array by enabling, disabling or hiding pixels.<br>
+      <li>Copy the resulting code into a "2d-gaps.json" file and upload it to your device via the webapp Settings/2D Configuration/upload<br>
+    </ol>
+    <hr>
+    
+    <div class="controls">
+      <div class="optionBox">
+        <label><b>Array</b></label>
+          <ul>
+            <div class="inputBox">
+              <input id="xdim" type="number" name="xdim" min="1" value="16"/><label class="inputText">Width</label>
+            </div>
+            <div class="inputBox">
+              <input id="ydim" type="number" name="ydim" min="1" value="5"/><label class="inputText">Height</label>
+            </div>
+          </ul>
+        </div>
+        <div class="optionBox">
+          <br>
+          <ul>
+            <div class="buildBox">
+              <input type="checkbox" id="clearAllCHK" onchange="clearAllPixels(this)">
+              <label for="clearAllCHK">Start empty</label>
+            </div>
+            <div class="buildBox">
+              <button id="rebuildArray" onclick="buildGrid()">Rebuild</button>
+            </div>
+          </ul>
+      </div>
+            
+      <div class="optionBox">
+        <label><b>Options</b></label>
+          <ul>
+            <div class="buildBox">
+              <input type="radio" checked id="gapCHK" name="outputMode" onchange="gapOutput(this)">
+              <label for="gapCHK">Normal</label>
+              <input type="radio" id="triCHK" name="outputMode" onchange="triOutput(this)">
+              <label for="triCHK">Tri-State</label>
+            </div>
+            <div class="buildBox">
+              <input type="checkbox" checked id="discardCHK" onchange="discardPixels(this)">
+              <label for="discardCHK">Discard unchecked pixels</label>
+            </div>
+          </ul>
+      </div>
+      
+    </div>
+
+    <div class="ledGrid" id="ledgrid"></div>
+    <div id="infoOut"></div>
+    <br>
+    <div id="result">Map goes here.</div>
+    
+    <form><br>
+        <label><b>CREDIT:</b></label>
+        <ul>
+          <p><a href="https://github.com/Intrinsically-Sublime/WLED-2D-gaps.json-Generator">WLED 2D-gaps.json Generator Code </a>by Intrinsically-Sublime<br> 
+          Based on FastLED <a href="https://github.com/macetech/FastLED-XY-Map-Generator"> XY-Map-Generator</a> by Garrett Mace</p>
+        </ul><hr><br>
+    </form>
+  </body>
+</html>
