@@ -94,12 +94,10 @@
   padding-left: 0.25em;
 }
 
-.downloadBox {
-  float: left;
-  text-align: right;
-  width: 10em;
-  display: block;
-  margin: 0.5em;
+.button {
+  font-size: 1em;
+  height: 1.65em;
+  line-height: 1.5em;
 }
 
 .ledGrid {

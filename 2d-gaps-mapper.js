@@ -20,7 +20,7 @@ function download(){
         document.createElement("a")
     );
     a.download = "2d-gaps.json";
-    a.href = "data:text/html," + document.getElementById("result").innerHTML; // Grab the HTML
+    a.href = "data:text/html," + document.getElementById("result").innerText; // Grab the HTML
     a.click(); // Trigger a click on the element
 }
 
