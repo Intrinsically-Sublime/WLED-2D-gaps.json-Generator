@@ -8,6 +8,8 @@ WLED ledmap.json https://intrinsically-sublime.github.io/WLED-Ledmap.json-Genera
 
 FastLED XY remapper https://intrinsically-sublime.github.io/FastLED-XY-Map-Generator/
 
+WLED Arbitrary Path Ledmap.json Generator https://intrinsically-sublime.github.io/WLED-Arbitrary-Path-Ledmap.json-Generator/
+
 ### About
 * Normal mode allows 1 & 0 or 1 & -1 depending on the discard pixel option.
 * Tri-State allows 1, 0, or -1 regardless of the discard pixel option.
