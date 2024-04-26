@@ -28,53 +28,44 @@
     <div class="controls">
       <div class="optionBox">
         <label><b>Array</b></label>
-          <ul>
-            <div class="inputBox">
-              <input id="xdim" type="number" name="xdim" min="1" value="16"/><label class="inputText">Width</label>
-            </div>
-            <div class="inputBox">
-              <input id="ydim" type="number" name="ydim" min="1" value="5"/><label class="inputText">Height</label>
-            </div>
-          </ul>
+        <div class="inputBox">
+          <input id="xdim" type="number" name="xdim" min="1" value="16"/>
+          <label class="inputText">Width</label>
         </div>
-        <div class="optionBox">
-          <br>
-          <ul>
-            <div class="buildBox">
-              <input type="checkbox" id="clearAllCHK" onchange="clearAllPixels(this)">
-              <label for="clearAllCHK">Start empty</label>
-            </div>
-            <div class="buildBox">
-              <button class="button" id="rebuildArray" onclick="buildGrid()">Rebuild</button>
-            </div>
-          </ul>
+        <div class="inputBox">
+          <input id="ydim" type="number" name="ydim" min="1" value="5"/>
+          <label class="inputText">Height</label>
+        </div>
+      </div>
+      <div class="optionBox">
+        <br>
+        <div class="buildBox">
+          <input type="checkbox" id="clearAllCHK" onchange="clearAllPixels(this)">
+          <label for="clearAllCHK">Start empty</label>
+        </div>
+        <div class="buildBox">
+          <button id="rebuildArray" onclick="buildGrid()">Rebuild</button>
+        </div>
       </div>
             
       <div class="optionBox">
         <label><b>Options</b></label>
-          <ul>
-            <div class="buildBox">
-              <input type="radio" checked id="gapCHK" name="outputMode" onchange="gapOutput(this)">
-              <label for="gapCHK">Normal</label>
-              <input type="radio" id="triCHK" name="outputMode" onchange="triOutput(this)">
-              <label for="triCHK">Tri-State</label>
-            </div>
-            <div class="buildBox">
-              <input type="checkbox" checked id="discardCHK" onchange="discardPixels(this)">
-              <label for="discardCHK">Discard unchecked pixels</label>
-            </div>
-          </ul>
+        <div class="buildBox">
+          <input type="radio" checked id="gapCHK" name="outputMode" onchange="gapOutput(this)">
+          <label for="gapCHK">Normal</label>
+          <input type="radio" id="triCHK" name="outputMode" onchange="triOutput(this)">
+          <label for="triCHK">Tri-State</label><br>
+          <input type="checkbox" checked id="discardCHK" onchange="discardPixels(this)">
+          <label for="discardCHK">Discard unchecked pixels</label>
+        </div>
       </div>
       <div class="optionBox">
-        <br>
-        <ul>
-          <div class="buildBox">
-            <br><br>
-          </div>
-          <div class="buildBox">
-            <button class="button" id="downloadFile" onclick="download()">Download</button>
-          </div>
-        </ul>
+          <label for="discardCHK"><b>Matrix name</b></label>
+        <div class="buildBox">
+          <input class="nameBox" id="matrixName" type="text" name="matrixName" value="my_matrix"/><br>
+          <button class="button" id="downloadFile" onclick="download()">Download</button><br>
+          <button class="button" id="copyResults" onclick="copyOutput()">Copy</button>
+        </div>
       </div>
     </div>
 
