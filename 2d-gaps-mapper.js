@@ -15,6 +15,18 @@ var pixelarray = [];
 var discardP = 1;
 var clearAll = 0;
 
+function lightMode() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
+   
+  var btn = document.getElementById("lightToggle");
+  if (btn.innerText == "Dark") {
+    btn.innerText = "Light";
+  } else {
+    btn.innerText = "Dark";
+  }
+}
+
 function download(){
     matrixName = (document.getElementById("matrixName")).value;
     printMap();
