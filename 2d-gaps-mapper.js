@@ -34,9 +34,9 @@ function download(){
         document.createElement("a")
     );
     if (matrixName == "my_matrix") {
-      a.download = "ledmap.json";
+      a.download = "2d_gaps.json";
     } else {
-      a.download = matrixName + ".ledmap.json";
+      a.download = matrixName + ".2d_gaps.json";
     }
 
     a.href = "data:text/html," + document.getElementById("result").innerText; // Grab the HTML
