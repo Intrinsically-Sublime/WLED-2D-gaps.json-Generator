@@ -247,7 +247,7 @@ function printMap() {
   mapHTML += '<PRE>';
   mapHTML += '[<BR>';
     for (x = 0; x < num_leds; x++) {
-      mapHTML += pad('  ', pixelarray[ledindex][2], true);
+      mapHTML += pixelarray[ledindex][2];
       ledindex++;
       if (ledindex < num_leds) mapHTML += ",";
       if ((x+1) % xdim === 0) mapHTML += '<BR>';
